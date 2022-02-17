@@ -1,7 +1,7 @@
 module.exports = {
-    host:"localhost",
-    user:"root",
-    password:"Omega@7809",
+    host:"digihal-db.cydpvtg1mc9v.ap-south-1.rds.amazonaws.com",
+    user:"admin",
+    password:"Omega7809",
     dbName:"digihal",
     dialect: "mysql",
   pool: {
