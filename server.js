@@ -12,5 +12,7 @@ var productAPI = require("./controllers/ad-controller");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api",productAPI);
-app.listen(8080);
-console.log("Server up and running on 8080");
+let PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
