@@ -6,7 +6,10 @@ const corsOptions ={
    credentials:true,            //access-control-allow-credentials:true
    optionSuccessStatus:200,
 }
-app.use(express.static("digihal-angular"));
+app.use(express.static("digihal"));
+app.get("/output",(req, res)=>{
+  res.redirect('/output');
+})
 app.use(cors(corsOptions)) // Use this after the variable declaration
 var productAPI = require("./controllers/ad-controller");
 app.use(express.json());
