@@ -66,7 +66,9 @@ function takeInput(data,input_obj){
 
 
   //display the result
-  var obj=data[0];
+  const obj=[];
+  obj.push(data[0]);
+  obj.push(data[1]);
   
   return obj;
 }
