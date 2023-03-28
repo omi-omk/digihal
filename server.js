@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api",productAPI);
 app.use("/crud",crudAPI);
-let PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 // let PORT = 3000;
 
 app.listen(PORT, () => {
