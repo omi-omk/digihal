@@ -1,0 +1,17 @@
+# .cpanel.yml
+
+---
+# Deployment settings for cPanel
+
+# The directory where your application will be deployed.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/digihali/public_html
+    - /bin/cp -r * $DEPLOYPATH
+    - /usr/local/bin/npm install --production --prefix $DEPLOYPATH
+
+# If you need to run additional commands after deployment,
+# you can specify them here.
+post_deploy:
+  tasks:
+    - /usr/local/bin/npm prune --production --prefix $DEPLOYPATH
