@@ -10,6 +10,9 @@ app.use(express.static("digihal"));
 app.get("/output",(req, res)=>{
   res.redirect('/output');
 })
+app.get('/home', (req, res) => {
+  res.redirect('/');
+})
 app.use(cors(
   {
     origin: "*",

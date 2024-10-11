@@ -1,9 +1,10 @@
 module.exports = {
-  host:"sql12.freemysqlhosting.net",
-  user:"sql12609326",
-  password:"2QDYae4z5v",
-  dbName:"sql12609326",
-    dialect: "mysql",
+  host: "sql12.freemysqlhosting.net",
+  user: "sql12737035",
+  password: "yas9pJTwac",  // Updated password
+  dbName: "sql12737035",   // This was already correct
+  dialect: "mysql",
+  port: 3306,  // Added the port based on your credentials
   pool: {
     max: 5,
     min: 0,
@@ -11,6 +12,12 @@ module.exports = {
     idle: 10000
   }
 };
+
+// Server: sql12.freemysqlhosting.net
+// Name: sql12737035
+// Username: sql12737035
+// Password: yas9pJTwac
+// Port number: 3306
 // module.exports = {
 //   host:"digihal-db.cydpvtg1mc9v.ap-south-1.rds.amazonaws.com",
 //   user:"admin",
