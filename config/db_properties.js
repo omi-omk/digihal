@@ -13,11 +13,6 @@ module.exports = {
   }
 };
 
-// Server: sql12.freemysqlhosting.net
-// Name: sql12737035
-// Username: sql12737035
-// Password: yas9pJTwac
-// Port number: 3306
 // module.exports = {
 //   host:"digihal-db.cydpvtg1mc9v.ap-south-1.rds.amazonaws.com",
 //   user:"admin",
